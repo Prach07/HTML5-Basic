@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+</head>
+<body>
+    <h1 align="center">HTML แบบฟอร์มลงทะเบียน</h1>
+    <!-- action ใน form คือจะส่งข้อมูลไปที่ตัว server  -->
+    <!-- div สร้างกล่อง , align="center" จัดให้อยู่ตรงกลาง ,labal ป้ายกำกับ, input รับค่า ,placholder รายละเอียด  -->
+    <form align="center">
+        <div>
+            <label for="firstname">ชื่อจริง</label>
+            <input type="text" name="fname" placeholder="ป้อนชื่อจริงของคุณ (ก-ฮ)" required >
+        </div>
+
+        <div>
+            <label for="lastname">นามสกุล</label>
+            <input type="text" name="lname">
+        </div>
+        <!-- email  -->
+        <div>
+            <label for="email">อีเมล์</label>
+            <input type="email" name="email" required>
+        </div>
+        <!-- password  -->
+        <div>
+            <label for="lastname">รหัสผ่าน</label>
+            <input type="password" name="password">
+        </div>
+        <!-- textarea  -->
+        <div>
+            <label for="">ที่อยู่</label>
+            <textarea name="" id="" cols="20" rows="5"></textarea>
+        </div>
+        <!-- number  -->
+        <div>
+            <label for="lastname">อายุ</label>
+            <input type="number" name="age" min="0" max="10" value="2" readonly>
+        </div>
+        <!-- date  -->
+        <div>
+            <label for="lastname">วันเกิด</label>
+            <input type="date" name="birthdate">
+        </div>
+        <!-- tel  -->
+        <div>
+            <label for="lastname">เบอร์โทรศัพท์</label>
+            <input type="tel" name="tel">
+        </div>
+        <!-- color  -->
+        <div>
+            <label for="lastname">สีที่ชอบ</label>
+            <input type="color" name="color" >
+        </div>
+        <!-- range  -->
+        <div>
+            <label for="lastname">ช่วงตัวเลข</label>
+            <input type="range" name="rangenumber" value="5">
+        </div>
+
+        <!-- ตัวเลือก  -->
+        <div>
+            <label for="lastname">ระดับการศึกษา</label>
+            <select name="edu" id="">
+                <option value="ปริญญาโท" selected>ปริญญาโท</option>
+                <option value="ปริญญาตรี">ปริญญาตรี</option>
+                <option value="มัธยม">มัธยมศีกษา</option>
+            </select>
+        </div>
+        <!-- radio  -->
+        <div>
+            <!-- radio การกำหนดชื่อ ให้อยู่ในกลุ่มเดียวกัน จะเป็นทางเลือก แต่ถ้าไม่ จะสามารถ เลือกได้หมด  -->
+            <label for="">เพศ</label>
+            <input type="radio" name="gender">เพศชาย
+            <input type="radio" name="gender">เพศหญิง
+            <input type="radio" name="gender">กำหนดเอง
+        </div>
+        <!-- checkbox -->
+        <div>
+            <label for="lastname">สิ่งที่ชื่นชอบ</label>
+            <input type="checkbox" name="fav">เขียนโปรแกรม
+            <input type="checkbox" name="fav">สร้างเกมส์
+            <input type="checkbox" name="fav">เขียนเว็บ
+            <input type="checkbox" name="fav">อื่นๆ 
+        </div>
+        <!-- attach file  -->
+        <div>
+            <label for="lastname">แนบเอกสาร</label>
+            <input type="file">
+        </div>
+        <!-- attach url  -->
+        <div>
+            <label for="lastname">เว็บไซต์</label>
+            <input type="url">
+        </div>
+        <!-- submit ส่งข้อมูล ทั้งหมด , reset ล้างข้อมูล -->
+        <div>
+            <button type="submit">บันทึกข้อมูล</button>
+            <!-- <input type="reset" name="" id="" value="ล้างข้อมูล"> -->
+            <button type="reset">ล้างข้อมูล</button>
+        </div>
+
+    </form>
+</body>
+</html>
+<!--
+     value ค่าเริ่มต้น ,textarea กล่องใส่ข้อความ กำหนดพื้นที่ ต่างๆ , 
+    select ,option  เหมาะกับการใช้ ที่มีข้อมูลจำนวนมาก , radio เหมาะกับข้อมูลน้อยมากกว่า
+    *attrubute สำคัญ ที่บังคับให้กรอกข้อมูลให้ครบ   required
+    readonly  กำหนดให้อ่านได้อย่างเดียว ไม่สามารถเปลี่ยนค่าได้ 
+
+
+
+
+
+
+
+
+-->

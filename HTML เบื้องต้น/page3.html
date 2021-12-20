@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page3</title>
+    <!-- กำหนด </style> -->
+    <style>
+        div{
+            border: 10px solid blue;
+        }
+        span{
+            border: 10px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>รายการสินค้า</h1>
+    <!-- ตาราง  สามารถระบุ รายละเอียดต่างๆได้ เช่น border, bgcolor ,cellpadding ขยายพื้นที่ด้านใน ,cellspaing -->
+    <table border="1" cellpadding="50" cellspacing="5">
+        <!-- ส่วนหัวของตาราง  -->
+        <thead>
+            <th>รหัสสินค้า</th>
+            <th>ภาพสินค้า</th>
+            <th>ชื่อสินค้า</th>
+            <th>ราคา</th>
+            <th>ดำเนินการสั่งซื้อ</th>
+        </thead>
+        <!-- ส่วนตัว หรือ เนื้อหาในตาราง ประกอบไปด้วย แถว และ คอลัม-->
+        <!-- สามารถ แทรก align จัดให้อยู่ center ได้ทั้งหมด ที่ tbody เพราะครอบคลุมทั้งหมด  -->
+        <tbody align="center">
+            <!-- tr tag row  สามารถใส่ รายละเอียด สี ฟอนต์ ได้หมด-->
+            <tr bgcolor="red">
+                <td>P001</td>
+                <!-- tag d  discription  -->
+                <!-- td  ภาพสินค้า  -->
+                <td >
+                    <img src="/picture/image3.jpg" alt="" width="50px" height="50px">
+                </td>
+                <!-- tag  ชื่อสินค้า  -->
+                <td bgcolor="write">ส้มตำ</td>
+                <!-- tag  ราคา  -->
+                <td>150.00</td>
+                <!-- tag  link สั่งซื้อสินค้า  ใน กรณียังไม่รู้ Link ใส่ # ไว้ก่อนได้  -->
+                <td rowspan="2">
+                    <a href="#">สั่งซื้อ</a>
+                </td>
+            </tr>
+            <tr bgcolor="orange" align="center">
+                <td>P002</td>
+                <td><img src="/picture/image4.jpg" alt="" width="50px" height="50px"></td>
+                <td bgcolor="yellow">Steak</td>
+                <td>200.00</td>
+               
+            </tr>
+            <tr></tr>
+            
+        </tbody>
+        <tfoot>
+            <tr align="right">
+                <!-- test colspan การรวม cell  -->
+                <td colspan="5"><strong>ราคารวม :500</strong></td>
+                
+            </tr>
+        </tfoot>
+    </table>
+    <span style="color: red;">
+        <h1>HTML5</h1>
+        <p>ap7tech</p>
+    </span>
+    <span style="color: yellow;">
+        <h1>CSS</h1>
+        <p>Prach</p>
+    </span>
+    <div style="color: aqua;">
+        <h1>AOM</h1>
+        <p>SIRIKANYA</p>
+    </div>
+</body>
+</html>
+
+<!-- ====การสร้างตาราง Table =====
+<table></table>  ใช้กำหนดสำหรับสร้างตาราง
+<thead></thead> กำหนดส่วนเนื้อหาหัวตาราง
+<tbody></tbody> กำหนดกลุ่มเนื้อหาตาราง 
+<tfoot></tfoot> กำหนดกลุ่มส่วนใต้ ตาราง
+<td></td>กำหนดคอลัม
+<th></th>กำหนดคอลัม ที่แสดงผลในส่วนหัวของตาราง
+
+Attribute ของตาราง 
+border="ความหนา" กำหนดเส้นของของตาราง std = 0 
+width="%" กำหนดความกว้างหน่วยเป็น % 
+bgcolor="สี" กำหนดสีพื้นหลังในตาราง
+<table bgcolor="สี"> กำหนดสีทั้งแถวและ คอลัมน์
+<tr bgcolor="สี"> สีของคอลัมน์ 
+    
+colspan="x" รวมคอลัมน์ ค่า x คือ จำนวนคอลัมน์ที่ต้องการรวมเข้าด้วยกัน ช่อง <td> -> *นิยมใช้ รวมเซลตาราง ที่ท้ายตาราง 
+rowspan="x" รวมค่า x คือจำนวนแถวที่ต้องการรวม
+align="left,center,right" จัดตำแหน่งของภาพ หรืออักษรภายในช่องตาราง <td>  ค่าปกติ คือ left
+Cellpadding แสดงข้อมูลภาพยในตาราง หากมีค่ามากก็จะมีพื้อนที่การแกสดงผลเป็นที่ว่างมาก ขึ้น ค่าเริ่มต้นเป็น 0  หน่วย px
+Cellspacing กำหนดขนาดเส้นตาราง หากมีค่ามากขึ้นเส้นตารางก็จะมีขนาดมากตามไปด้วย มีค่าเริ่มต้นเป็น 0 หน่วย px
+-->
